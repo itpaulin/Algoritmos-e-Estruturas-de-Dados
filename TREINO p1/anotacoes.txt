@@ -1,0 +1,25 @@
+numeros de passos = numero de execucoes da acao domintante
+
+apenas pior casos
+
+A notação O
+    Despreza constantes aditivas ou multiplicativas <-------
+    aplicada a entradas suficientemente grandes
+    Atua como uma aproximação para a quantidade de passos
+
+    3n  = O(n)
+    n² + n = O(n²)
+    6n³ + 4n - 9 = O(n³)
+
+Propriedades
+
+    O(g + h) = O(g) + O(h)  {g, h: funcões reais}
+    O(k x g) = kO(g) = O(g) <!-DESPREZA CONSTANTE ENTAO O(g)) apenas-> {k: constate}
+
+Algoritmos recursivos
+    algoritmo que contém em sua descrição uma ou mais chamadas a si mesmo 
+
+    Cálculo da complexidade
+        determinar o numero de chamadas à recursão
+        calcular a complexidade da execucao correspondente a uma única chamada
+        multiplicar o numero de chamadas pela complexidade da computacao de uma chamada isolada

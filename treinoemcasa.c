@@ -14,7 +14,10 @@ struct TDieta
     float Tkcal;               // TOTAL de kcal
 };
 
-void criarDieta(struct TDieta *d);
+void criarDieta(struct TDieta *d)
+{
+    
+}
 
 int main()
 {
@@ -40,6 +43,3 @@ int main()
     }
 }
 
-void criarDieta(struct TDieta *d)
-{
-}

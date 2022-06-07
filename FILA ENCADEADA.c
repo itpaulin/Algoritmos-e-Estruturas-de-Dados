@@ -12,11 +12,11 @@ int inserirFila(struct Node** head_ref, int new_data){
     struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
     struct Node *last = *head_ref;
 
-    new_node->data  = new_data; // DATA NAO ARMAZENAR DADO E PASSAR PARA O NOVO NÓ
+    new_node->data  = new_data; // DATA NAO ARMAZENAR DADO E PASSAR PARA O NOVO Nï¿½
 
     new_node->next = NULL; // ULTIMO SER NULO
 
-    if (*head_ref == NULL) // se a fila estiver vazia esse será o cabeçalho
+    if (*head_ref == NULL) // se a fila estiver vazia esse serï¿½ o cabeï¿½alho
     {
        *head_ref = new_node;
        return;
@@ -35,14 +35,14 @@ void imprimeFila(struct Node* n){
         printf(" %d \n", n->data);
         n = n->next;
     }
-}
+} 
 
 void excluirFila(struct Node** head_ref){
 
     struct Node *temp = *head_ref, *prev;
-        *head_ref = temp->next; // mudando o cabeçalho pro proximo depois do primeiro
+        *head_ref = temp->next; // mudando o cabeï¿½alho pro proximo depois do primeiro
         free(temp); // liberando memoria "excluindo"
-        return printf("excluído com sucesso.");
+        return printf("excluï¿½do com sucesso.");
 }
 
 
